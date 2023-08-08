@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(192, 190, 222);
+    background: linear-gradient(90deg, rgb(222, 221, 226) 10%, rgb(226, 39, 39) 100%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-image: url(../assets/img/OIP.jpeg);
+    height: 90px;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header div img {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li {
+    float: inline-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+nav ul li a {
+    padding: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.notas {
+    display: inline;
+}
+
+div a img {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+main section h1 {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    font-size: 45px;
+    justify-content: center;
+}
+
+.notas {
+    width: 450px;
+    border: 5px solid whitesmoke;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+div p {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+/*carrousel*/
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%;
+    animation: slideAnimation 20s infinite;
+}
+
+.carousel img {
+    width: 80%;
+    height: 80%;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    33.33% {
+        transform: translateX(-100%);
+    }
+
+    66.66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+footer {
+    background-image: url(../assets/img/red-metallic-background-bright.jpg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos iconos de redes*/
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Estilos de contacto */
+.contacto {
+    flex: 3;
+    max-width: 100px;
+}
+
+/* Estilos de suscripción */
+.suscripcion {
+    flex: 1;
+    max-width: 100px;
+}
+
+/* Estilos formulario*/
+.suscripcion form {
+    display: flex;
+}
+
+.suscripcion input[type="email"] {
+    flex: 1;
+    padding: 10px;
+}
+
+.suscripcion input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
