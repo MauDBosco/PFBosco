@@ -16,17 +16,16 @@ header {
     height: 90px;
 }
 
-.contenedor1 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
 header div img {
     display: flex;
     flex-direction: row;
     padding: 10px;
     align-items: flex-start;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -40,7 +39,6 @@ nav ul li {
     float: inline-start;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-
 }
 
 nav ul li a {
@@ -57,7 +55,15 @@ nav ul li a {
 }
 
 .notas {
-    display: inline;
+    display: flex;
+    width: 450px;
+    border: 5px solid whitesmoke;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
 }
 
 div a img {
@@ -72,18 +78,6 @@ main section h1 {
     background-color: azure;
     font-size: 45px;
     justify-content: center;
-}
-
-.notas {
-    width: 450px;
-    border: 5px solid whitesmoke;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
 }
 
 .card-container {
@@ -105,11 +99,8 @@ main section h1 {
 .card img {
     width: 100%;
     height: 200px;
+    -o-object-fit: cover;
     object-fit: cover;
-}
-
-.card-content {
-    padding: 10px;
 }
 
 .card h2 {
@@ -121,9 +112,13 @@ main section h1 {
     font-size: 14px;
 }
 
+.card-content {
+    padding: 10px;
+}
+
 .boton {
     display: inline-block;
-    background-color: #007BFF;
+    background-color: #007bff;
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -148,14 +143,14 @@ div p {
     overflow: hidden;
 }
 
-.slide {
-    flex: 0 0 100%;
-    animation: slideAnimation 20s infinite;
-}
-
 .carousel img {
     width: 80%;
     height: 80%;
+}
+
+.slide {
+    flex: 0 0 100%;
+    animation: slideAnimation 20s infinite;
 }
 
 @keyframes slideAnimation {
@@ -181,9 +176,9 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    /*estilos iconos de redes*/
 }
 
-/* Estilos iconos de redes*/
 footer ul {
     list-style: none;
     padding: 0;
@@ -200,30 +195,29 @@ footer ul li a {
     font-size: 20px;
 }
 
-/* Estilos de contacto */
+/*estilos contacto*/
 .contacto {
     flex: 3;
     max-width: 100px;
 }
 
-/* Estilos de suscripción */
+/*estilos de suscriocion*/
 .suscripcion {
     flex: 1;
     max-width: 100px;
 }
 
-/* Estilos formulario*/
 .suscripcion form {
     display: flex;
 }
 
-.suscripcion input[type="email"] {
+.suscripcion input[type=email] {
     flex: 1;
     padding: 10px;
 }
 
-.suscripcion input[type="submit"] {
-    background-color: #4CAF50;
+.suscripcion input[type=submit] {
+    background-color: #4caf50;
     color: white;
     border: none;
     padding: 8px 20px;
@@ -242,5 +236,8 @@ footer ul li a {
 .banner img {
     max-width: 100%;
     max-height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
+
+/*# sourceMappingURL=style.css.map */
