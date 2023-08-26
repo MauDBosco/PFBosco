@@ -220,6 +220,14 @@ footer {
 .entrevista {
     display: flex;
     max-width: 100%;
+    max-height: 100%;
+    img{
+        width: 50%;
+        border-radius: 15px;
+    }
+    p{
+        margin: 1.5rem;
+    }
 }
 .slide-right {
     -webkit-animation: slide-right 2s ease-in 2 alternate;
