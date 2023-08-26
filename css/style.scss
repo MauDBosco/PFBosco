@@ -12,9 +12,7 @@ body {
 
 header {
     width: 100%;
-    background-image: url(../assets/img/OIP.jpeg);
-    height: 90px;
-
+    height: auto;
     div {
         img {
             display: flex;
@@ -23,11 +21,6 @@ header {
             align-items: flex-start;
         }
     }
-}
-
-.contenedor1 {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 nav {
@@ -49,13 +42,6 @@ nav {
             }
         }
     }
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-evenly;
 }
 
 .notas {
@@ -150,40 +136,12 @@ div {
     display: grid;
 }
 
-/*carrousel*/
-.carousel {
-    display: flex;
-    overflow: hidden;
-
-    img {
-        width: 80%;
-        height: 80%;
-    }
-}
-
-.slide {
-    flex: 0 0 100%;
-    animation: slideAnimation 20s infinite;
-}
-@keyframes slideAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    33.33% {
-        transform: translateX(-100%);
-    }
-    66.66% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(-300%);
-    }
-}
 footer {
     background-image: url(../assets/img/red-metallic-background-bright.jpg);
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    width: 100%;
     /*estilos iconos de redes*/
     ul {
         list-style: none;
@@ -195,6 +153,10 @@ footer {
             a {
                 color: #333;
                 font-size: 20px;
+                opacity: 1;
+                img:hover{
+                    transform: translateY(-10px);
+                }
             }
         }
     }
